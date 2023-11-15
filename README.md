@@ -1,27 +1,68 @@
 # Pokemon Battle Outcome Predictor
 
-Just a simple project for predictiong the outcome of battle between two pokemons using different classification models by feeding them a dataset containing stats of each pokemon.
+## Overview
+Just a simple project for predictiong the outcome of battle between two pokemons using different classification models by feeding them a dataset containing stats of each pokemon.The dataset includes information about Pokemon attributes and battle outcomes. Three classifiers, namely Random Forest Classifier, Decision Tree Classifier, and K-Nearest Neighbor, are employed for predictions.
 
-## Requirements
+## Getting Started
 
-This program requires python and some of it's libraries along with their dependencies. Main libraries required and their last tested version is given below:
+### Prerequisites
 
-* Python: 3.9.7
+Make sure you have the following Python libraries installed:
 
-* scipy: 1.8.1
+- pandas
+- numpy
+- matplotlib
+- scikit-learn
 
-* numpy: 1.22.3
+### Installation
 
-* matplotlib: 3.5.2
+Clone the repository to your local machine:
 
-* pandas: 1.4.2
+```bash
+git clone https://github.com/amanparasher/Pokemon-Battle-Outcome-Predictor.git
+```
 
-* sklearn: 1.1.0
+## Usage
 
-## References
+1. Install the required libraries mentioned in the Prerequisites section.
 
-* Blog for initial reference [here](https://towardsdatascience.com/become-a-pok%C3%A9mon-master-with-machine-learning-f61686542ef1)
+2. Download the dataset files (`pokemon.csv` and `combats.csv`) and place them in the project directory.
 
-* Datasets can be found on [kaggle](https://www.kaggle.com/datasets/terminus7/pokemon-challenge)
+3. Run the Jupyter notebook or Python script to execute the code.
 
-* The official documentation for [Scikit-learn](https://scikit-learn.org/stable) and [matplotlib](https://matplotlib.org/stable/api/index)
+```bash
+python pokemon_battle_predictor.py
+```
+
+## Data Visualization
+
+Visualizations are included to explore the distribution of Pokemon types and generations.
+
+- Bar chart showing the number of Pokemon for each type.
+- Pie chart representing the percentage distribution of Pokemon across generations.
+
+## Data Preprocessing
+
+1. Checked for null values and filled missing data in the "Name" column.
+2. Handled missing values in the "Type 2" column by replacing them with "NA."
+3. Converted categorical data to numerical values.
+4. Used FeatureHasher to convert "Type 1" and "Type 2" columns.
+5. Converted the dataset into a new format: (pokemon_1_data, pokemon_2_data, winner).
+
+## Classification Models
+
+Three classification models were implemented:
+
+1. **Random Forest Classifier:**
+   - Achieved an accuracy of 94.88%.
+   - Explored the impact of varying `n_estimators` on accuracy and training time.
+
+2. **Decision Tree Classifier:**
+   - Achieved an accuracy of 93.84%.
+
+3. **K-Nearest Neighbor:**
+   - Achieved an accuracy of 87.576%.
+
+## Hyperparameter Tuning
+
+Tuned the Random Forest Classifier by experimenting with different values of `n_estimators` to improve accuracy. Plotted graphs to visualize the relationship between `n_estimators`, testing accuracy, and training time.
