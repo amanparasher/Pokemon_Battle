@@ -66,3 +66,24 @@ Three classification models were implemented:
 ## Hyperparameter Tuning
 
 Tuned the Random Forest Classifier by experimenting with different values of `n_estimators` to improve accuracy. Plotted graphs to visualize the relationship between `n_estimators`, testing accuracy, and training time.
+
+
+## Conclusion
+
+- The Random Forest Classifier with 400 `n_estimators` achieved the highest accuracy of 94.944%.
+- The project demonstrates the use of machine learning classifiers to predict Pokemon battle outcomes based on their attributes.
+
+Feel free to explore and modify the code for further improvements and analysis. Enjoy predicting Pokemon battles!
+
+
+
+
+
+
+## References
+
+* Blog for initial reference [here](https://towardsdatascience.com/become-a-pok%C3%A9mon-master-with-machine-learning-f61686542ef1)
+
+* Datasets can be found on [kaggle](https://www.kaggle.com/datasets/terminus7/pokemon-challenge)
+
+* The official documentation for [Scikit-learn](https://scikit-learn.org/stable) and [matplotlib](https://matplotlib.org/stable/api/index)
