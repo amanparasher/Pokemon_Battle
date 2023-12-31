@@ -70,7 +70,7 @@ Tuned the Random Forest Classifier by experimenting with different values of `n_
 
 ## Conclusion
 
-- The Random Forest Classifier with 400 `n_estimators` achieved the highest accuracy of 94.944%.
+- The Random Forest Classifier with 400 `n_estimators` achieved the highest accuracy of 94.943%.
 - The project demonstrates the use of machine learning classifiers to predict Pokemon battle outcomes based on their attributes.
 
 Feel free to explore and modify the code for further improvements and analysis. Enjoy predicting Pokemon battles!
